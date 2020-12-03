@@ -29,7 +29,8 @@ let data = [
         }
     }
 ];
-let output = [];
+let output = [...data.map(data=>data.socialPost.mediaUrl)];
+
 
 // Your code here
 

@@ -5,3 +5,8 @@
 
 // your code goes here
 
+fs = require('fs');
+path = require('path');
+fs.writeFile(path.join(__dirname,'text.txt'), "Hello World!!", (data,err)=>{
+    console.log("File saved successfully!!!")
+})
