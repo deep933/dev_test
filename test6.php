@@ -17,7 +17,22 @@ class errorHandler {
         throw new \Exception('This is an error');
     }
 
+    public function testMethod(){
+        try {
+            $this->errorsHappen();
+        } catch (\Exception $e) {
+            echo 'Error:',  $e->getMessage();
+        }
+    }
+
     // Code goes here
 }
 
+$errHandle = new errorHandler();
+
+$errHandle->testMethod();
+
+
+
 // Code goes here
+?>
